@@ -1,0 +1,356 @@
+body
+{
+	width: 100%;
+}
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.name h1
+{
+	padding-top: 10px;
+	text-align: center;
+	font-size:60px;
+	width: 100%;
+	height: 100px;
+	background-color: #49a682;
+	color: #e6c11e;
+}
+.fa-pepper-hot
+{
+	color: red;
+	margin-right: 10px;
+}
+.search
+{
+	display: flex;
+	flex-direction: row;
+}
+.fa-search
+{
+	width:5%;
+	background-color: yellow;
+	font-size: 20px;
+	text-align: center;
+}
+input
+{
+	width:95%;
+	background-color: grey;
+}
+ul
+{
+	list-style: none;
+}
+.mainmenu
+{
+	width: 60%;
+	margin: auto;
+}
+.menu
+{
+	border: 1px solid;
+	width: 40%;
+	height:330px;
+	margin-top: 30px;
+	text-align: center;
+	padding-top: 15%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.fa-music
+{
+	font-size: 40px;
+	background: linear-gradient(to right, #ab0000 0%,#f79494 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.upper
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.lower
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+#first
+{ 
+	font-family: 'Felipa';
+	background-color: #ffcdbd;
+}
+#first a
+{
+	text-decoration: none;
+	color: #5c0606;
+}
+#second
+{
+	 font-family: 'Fresca';
+	 background-color: #f4e6f7;
+}
+#second a
+{
+	background: linear-gradient(to right, #c97e14 0%,#b977f2 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+#third
+{
+	font-family: 'Alex Brush';
+	font-size: 22px;
+	background-color: #f0f0eb;
+}
+#third a
+{
+	background: linear-gradient(to right,#293d94 0%,#8dc1f2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#fourth
+{
+	font-family: 'Kaushan Script';
+	font-size: 22px;
+	background-color: #fffffc;
+}
+#fourth a
+{
+	background: linear-gradient(to right,#048f17 0%,#abffa8 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.prochainement h3
+{
+	border: 1px solid black;
+	background-color: #49a682;
+	width:15%;
+	height: 30px;
+	text-align: center;
+	margin:auto;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+.prochainement a
+{
+	text-decoration: none;
+	color:#e6c11e; 
+}
+footer
+{
+	position: relative;
+  	position: -webkit-sticky;
+  	position: sticky;
+ 	bottom:3;
+ 	margin-top: 10px;
+}
+.contacteznous
+{
+	width: 100%;
+	height: 40px;
+	background-color: #49a682;
+}
+.contacteznous ul
+{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 30px;
+}
+.mentions
+{
+	width: 20%;
+}
+.mentions a
+{
+	text-decoration: none;
+	color:#e6c11e;
+}
+.mentions a:hover
+{
+	text-decoration: underline;
+	opacity: 0.7;
+  	-webkit-animation: wiggle 0.2s;
+}
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform:rotate(2deg);}
+    50% {-webkit-transform:rotate(-2deg);}
+    100% {-webkit-transform:rotate(2deg);}
+}
+.contact
+{
+	width: 20%; 
+}
+.contact a
+{
+	text-decoration: none;
+	color:#e6c11e;
+}
+#container1
+{
+	font-family: 'Felipa';
+	background-color: #ffcdbd;
+}
+#container1 h2
+{
+	color: #852424;
+}
+#container2
+{
+	font-family: 'Fresca';
+	background-color: #f4e6f7;
+}
+#container2 h2
+{
+	background: linear-gradient(to right, #c97e14 0%,#b977f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#container3
+{
+	font-family: 'Alex Brush';
+	background-color: #f0f0eb;
+	font-weight: bolder;
+}
+#container3 h2
+{
+	background: linear-gradient(to right,#293d94 0%,#8dc1f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#container4
+{
+	font-family: 'Kaushan Script';
+	background-color: #fffffc;
+}
+#container4 h2
+{
+	background: linear-gradient(to right,#048f17 0%,#abffa8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container
+{
+	border: 1px solid;
+	width: 60%;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.topic
+{
+	width: 90%;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 40px;
+}
+.food 
+{
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+}
+.food h3
+{ 
+	width: 80%;
+	height: 60px;
+	text-align: center;
+	font-size: 30px;
+}
+.item
+{
+	height: 190px;
+}
+.item ul
+{
+	width: 80%;
+	margin:auto;
+	font-size: 18px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.plat
+{
+	width: 90%;
+}
+.prix
+{
+	width: 10%;
+}
+@media screen and (max-width: 780px)
+{
+	body
+	{
+		width: 100%;
+	}
+	.upper
+	{
+		flex-direction: column;
+	}
+	.lower
+	{
+		flex-direction: column;
+	}
+	.menu
+	{
+		width: 70%;
+		margin: auto;
+		margin-top: 20px;
+	}
+	.prochainement h3
+	{
+		width: 30%;
+		margin: auto;
+		margin-top: 20px;
+	}
+	footer
+	{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.mentions
+	{
+		width: 30%;
+		font-size: 25px;
+	}
+	.contact
+	{
+		width: 30%;
+		font-size: 25px;
+	}
+	.container
+	{
+		width: 80%;
+	}
+	.item ul
+	{
+		width: 90%;
+		align-items: center;
+		font-size: 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.topic h2
+	{
+		font-size: 40px;
+		text-align: center;
+	}
+	.topic 
+	{
+		width: 90%;
+		margin: auto;
+	}
+	.food h3
+	{
+		font-size: 25px;
+	}
+}
