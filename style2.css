@@ -27,22 +27,31 @@ body
 {
 	display: flex;
 	flex-direction: row;
+	height: 30px;
+}
+.search input
+{
+	border: 0px solid;
+	outline: none;
+	width:95%;
+	background-color: #c6c9c5;
 }
 .fa-search
 {
+	padding-top: 2px;
 	width:5%;
 	background-color: yellow;
-	font-size: 20px;
+	font-size: 23px;
 	text-align: center;
-}
-input
-{
-	width:95%;
-	background-color: grey;
 }
 ul
 {
 	list-style: none;
+}
+ul a:hover
+{
+	opacity: 0.8;
+	transform: scale(2.0);
 }
 .mainmenu
 {
@@ -165,32 +174,40 @@ footer
 }
 .mentions
 {
-	width: 20%;
+	width: 25%;
 }
 .mentions a
 {
 	text-decoration: none;
 	color:#e6c11e;
 }
-.mentions a:hover
+.mentions:hover
 {
 	text-decoration: underline;
-	opacity: 0.7;
-  	-webkit-animation: wiggle 0.2s;
+	opacity: 0.8;
+	-webkit-animation: wiggle 0.5s;
+	animation-iteration-count: 5;
 }
-@-webkit-keyframes wiggle {
-    0% {-webkit-transform:rotate(2deg);}
-    50% {-webkit-transform:rotate(-2deg);}
-    100% {-webkit-transform:rotate(2deg);}
+@keyframes wiggle {
+    0% {transform:rotate(2deg);}
+    50% {transform:rotate(-2deg);}
+    100% {transform:rotate(2deg);}
 }
 .contact
 {
-	width: 20%; 
+	width: 25%; 
 }
 .contact a
 {
 	text-decoration: none;
 	color:#e6c11e;
+}
+.contact:hover
+{
+	text-decoration: underline;
+	opacity: 0.8;
+	-webkit-animation: wiggle 0.5s;
+	animation-iteration-count: 5;
 }
 #container1
 {
@@ -258,18 +275,36 @@ footer
 }
 .food h3
 { 
-	width: 80%;
+	width: 90%;
+	margin: auto;
 	height: 60px;
 	text-align: center;
 	font-size: 30px;
 }
+.food h3:after 
+{
+    content: '';
+    cursor: pointer;
+    display: block;
+    height: 2.5px;
+    width: 0;
+    background: transparent;
+    -webkit-transition: width .2s ease;
+}
+.food h3:hover:after
+{
+    width: 100%;
+    background: black;
+    transition: width .5s ease, 
+    background-color .5s ease;
+}
 .item
 {
-	height: 190px;
+	height: 200px;
 }
 .item ul
 {
-	width: 80%;
+	width: 90%;
 	margin:auto;
 	font-size: 18px;
 	margin-top: 20px;
@@ -284,6 +319,19 @@ footer
 .prix
 {
 	width: 10%;
+}
+.bottommenu1 h2
+{
+	width: 40%;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	font-size: 34px;	
+}
+.bottommenu1 .fa-music
+{
+	margin-right: 10px;
 }
 @media screen and (max-width: 780px)
 {
@@ -304,6 +352,7 @@ footer
 		width: 70%;
 		margin: auto;
 		margin-top: 20px;
+		padding-top: 30%;
 	}
 	.prochainement h3
 	{
@@ -318,7 +367,7 @@ footer
 	}
 	.mentions
 	{
-		width: 30%;
+		width: 35%;
 		font-size: 25px;
 	}
 	.contact
@@ -348,9 +397,84 @@ footer
 	{
 		width: 90%;
 		margin: auto;
+		margin-top: 5px;
+	}
+	.food
+	{
+		text-align: center;
 	}
 	.food h3
 	{
+		width: 90%;
+		margin: auto;
 		font-size: 25px;
+	}
+	.bottommenu1 h2
+	{
+		width: 40%;
+		font-size: 24px;	
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.fa-search
+	{
+		padding-top: 2px;
+		width:15%;
+	}
+	.menu
+	{
+		width: 90%;
+		margin: auto;
+		margin-top: 30px;
+		padding-top: 35%;
+		height: 300px;
+	}
+	.prochainement h3
+	{
+		width: 40%;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.mentions
+	{
+		width: 40%;
+		font-size: 19px;
+		margin-top: 10px;
+	}
+	.contact
+	{
+		width: 40%;
+		font-size: 19px;
+		margin-top: 10px;
+	}
+
+}
+@media screen and (max-width: 320px)
+{
+	.name h1
+	{
+		font-size:50px;
+	}
+	.mentions
+	{
+		width: 40%;
+		font-size: 16px;	
+	}
+	.contact
+	{
+		width: 40%;
+		font-size: 16px;
+	}
+	.container
+	{
+		width: 90%;
+	}
+	.food h3
+	{
+		font-size: 20px;
+		height: 30px;
+		margin-top: 30px;
 	}
 }
