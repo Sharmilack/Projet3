@@ -50,7 +50,6 @@ ul
 }
 ul a:hover
 {
-	opacity: 0.8;
 	transform: scale(2.0);
 }
 .mainmenu
@@ -70,6 +69,10 @@ ul a:hover
 	display: flex;
 	flex-direction: column;
 }
+.menu:hover
+{
+	opacity: 0.5;
+}
 .fa-music
 {
 	font-size: 40px;
@@ -88,7 +91,6 @@ ul a:hover
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 }
 #first
 { 
@@ -201,6 +203,7 @@ footer
 {
 	text-decoration: none;
 	color:#e6c11e;
+	text-align: right;
 }
 .contact:hover
 {
@@ -284,19 +287,18 @@ footer
 .food h3:after 
 {
     content: '';
-    cursor: pointer;
     display: block;
     height: 2.5px;
     width: 0;
     background: transparent;
-    -webkit-transition: width .2s ease;
+    -webkit-transition: width 1.2s ease;
 }
 .food h3:hover:after
 {
     width: 100%;
-    background: black;
-    transition: width .5s ease, 
-    background-color .5s ease;
+    background: #38838f;
+    transition: width 2.5s ease, 
+    background-color 2.5s ease;
 }
 .item
 {
@@ -332,6 +334,14 @@ footer
 .bottommenu1 .fa-music
 {
 	margin-right: 10px;
+}
+.text h3
+{
+	margin-top: 30px;
+}
+.text p
+{
+	margin-top: 20px;
 }
 @media screen and (max-width: 780px)
 {
