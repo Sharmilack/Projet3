@@ -149,8 +149,7 @@ footer
 {
 	width: 100%;
 	text-align: center;
-	height: 120px;
-	padding-top: 30px;
+	padding-top: 25px;
 }
 .topic h2
 {
@@ -160,7 +159,7 @@ footer
 {
 	width: 90%;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 .food h3
 {
@@ -298,7 +297,7 @@ span:hover:after
 	width: 50%;
 	margin: auto;
 	align-items: center;
-	height: 100px;
+	padding-bottom: 50px;
 	display: flex;
 	flex-direction: row;
 	font-size: 40px;	
@@ -336,7 +335,7 @@ span:hover:after
 	}
 	#container1 h3
 	{
-		width: 45%;
+		width: 35%;
 	}
 	#container1 h3:before, #container1 h3:after
 	{
@@ -412,13 +411,13 @@ span:hover:after
 	{
 		width: 40%;
 		font-size: 19px;
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 	.contact
 	{
 		width: 40%;
 		font-size: 19px;
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 	.bottommenu1 h2
 	{

@@ -48,11 +48,11 @@ ul
 {
 	list-style: none;
 }
-ul a
+.menu a
 {
 	transition: transform .5s;
 }
-ul a:hover
+.menu a:hover
 {
 	transform: scale(1.3);
 }
@@ -154,15 +154,17 @@ ul a:hover
 .prochainement a
 {
 	text-decoration: none;
+	padding-left: 12px;
 	color:#e6c11e;
 	font-size: 20px; 
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 }
-.dot {
+.dot 
+{
   width: 12px;
   height: 12px;
+  margin-left: 5px;
   background:#e6c11e;
   display: inline-block;
   border-radius: 50%;
@@ -171,21 +173,25 @@ ul a:hover
   position: relative;
   animation: jump 1s infinite;
 }
-.dots-cont .dot-1{
+.dots-cont .dot-1
+{
   -webkit-animation-delay: 100ms;
   animation-delay: 100ms;
 }
 
-.dots-cont .dot-2{
+.dots-cont .dot-2
+{
   -webkit-animation-delay: 200ms;
   animation-delay: 200ms;
 }
 
-.dots-cont .dot-3{
+.dots-cont .dot-3
+{
   -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
 }
-@keyframes jump {
+@keyframes jump 
+{
 0%   {bottom: 0px;}
 20%  {bottom: 5px;}
 40%  {bottom: 0px;}
@@ -286,6 +292,7 @@ footer
 	}
 	.prochainement
 	{
+		width: 26%;
 		margin: auto;
 		margin-top: 20px;
 	}
@@ -293,7 +300,8 @@ footer
 	{
 		font-size: 16px;
 	}
-	.dot {
+	.dot 
+	{
   		width: 10px;
   		height: 10px;
   	}
@@ -334,13 +342,13 @@ footer
 	}
 	.prochainement
 	{
-		width: 48%;
+		width: 50%;
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
-	.prochainement a
+	.dot
 	{
-		margin: auto;
+		margin-left:2px;
 	}
 	.mentions
 	{
@@ -374,7 +382,12 @@ footer
 	}
 	.prochainement
 	{
-		width: 53%;
+		width: 57%;
+	}
+	.dot
+	{
+		margin-top: 6px;
+		margin-left: 1px;
 	}
 	.contacteznous
 	{
