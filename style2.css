@@ -144,17 +144,17 @@ ul
 .prochainement
 {
 	background-color: #49a682;
-	width:23%;
+	width:25%;
 	height: 40px;
 	margin:auto;
 	margin-top: 30px;
 	padding-top: 7px;
+	padding-left: 12px;
 	border-radius: 10px;
 }
 .prochainement a
 {
 	text-decoration: none;
-	padding-left: 12px;
 	color:#e6c11e;
 	font-size: 20px; 
 	display: flex;
@@ -164,7 +164,7 @@ ul
 {
   width: 12px;
   height: 12px;
-  margin-left: 5px;
+  margin-left: 2px;
   background:#e6c11e;
   display: inline-block;
   border-radius: 50%;
@@ -214,12 +214,12 @@ footer
 {	
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	font-size: 40px;
+	justify-content: space-around;
+	font-size: 30px;
 }
 .mentions
 {
-	width: 30%;
+	width: 25%;
 	margin: auto;
 }
 .mentions a
@@ -241,7 +241,7 @@ footer
 }
 .contact
 {
-	width: 30%; 
+	width: 25%; 
 	margin: auto;
 }
 .contact a
@@ -268,7 +268,7 @@ footer
 {
 	margin-top: 20px;
 }
-@media screen and (max-width: 780px)
+@media screen and (max-width: 900px)
 {
 	body
 	{
@@ -292,7 +292,7 @@ footer
 	}
 	.prochainement
 	{
-		width: 26%;
+		width: 28%;
 		margin: auto;
 		margin-top: 20px;
 	}
@@ -308,20 +308,27 @@ footer
 	footer
 	{
 		width: 100%;
-		margin-top: 10px;
 	}
 	.mentions
 	{
-		width: 35%;
+		width: 30%;
+		margin-top: 10px;
+	}
+	.mentions a
+	{
 		font-size: 25px;
 	}
 	.contact
 	{
 		width: 30%;
+		margin-top: 10px;
+	}
+	.contact a
+	{
 		font-size: 25px;
 	}
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 {
 	.fa-search
 	{
@@ -349,20 +356,27 @@ footer
 	.dot
 	{
 		margin-left:2px;
+		width: 8px;
+		height: 8px;
 	}
 	.mentions
 	{
 		width: 40%;
-		font-size: 19px;
 		margin-top: 10px;
+	}
+	.mentions a
+	{
+		font-size: 20px;
 	}
 	.contact
 	{
 		width: 40%;
-		font-size: 19px;
 		margin-top: 10px;
 	}
-
+	.contact a
+	{
+		font-size: 20px;
+	}
 }
 @media screen and (max-width: 320px)
 {
@@ -396,11 +410,17 @@ footer
 	.mentions
 	{
 		width: 40%;
-		font-size: 16px;	
+	}
+	.mentions a
+	{
+		font-size: 16px;
 	}
 	.contact
 	{
 		width: 40%;
+	}
+	.contact a
+	{
 		font-size: 16px;
 	}
 }

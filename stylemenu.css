@@ -45,13 +45,14 @@ footer
 {	
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	font-size: 40px;
+	justify-content: space-around;
+	font-size: 30px;
 }
 .mentions
 {
 	width: 30%;
 	margin: auto;
+	margin-top: 10px;
 }
 .mentions a
 {
@@ -72,14 +73,14 @@ footer
 }
 .contact
 {
-	width: 30%; 
+	width: 25%; 
 	margin: auto;
+	margin-top: 10px;
 }
 .contact a
 {
 	text-decoration: none;
 	color:#e6c11e;
-	text-align: right;
 }
 .contact:hover
 {
@@ -307,7 +308,7 @@ span:hover:after
 	margin-right: 10px;
 	margin-top: 5px;
 }
-@media screen and (max-width: 780px)
+@media screen and (max-width: 900px)
 {
 	body
 	{
@@ -316,17 +317,23 @@ span:hover:after
 	footer
 	{
 		width: 100%;
-		margin-top: 10px;
-		padding-top: 10px;
 	}
 	.mentions
 	{
-		width: 35%;
+		width: 30%;
+		margin-top: 10px;
+	}
+	.mentions a
+	{
 		font-size: 25px;
 	}
 	.contact
 	{
 		width: 30%;
+		margin-top: 10px;
+	}
+	.contact a
+	{
 		font-size: 25px;
 	}
 	.container
@@ -393,7 +400,7 @@ span:hover:after
 		font-size: 40px;	
 	}
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 {
 	.container
 	{
@@ -410,14 +417,20 @@ span:hover:after
 	.mentions
 	{
 		width: 40%;
-		font-size: 19px;
-		margin-top: 5px;
+		margin-top: 10px;
+	}
+	.mentions a
+	{
+		font-size: 20px;
 	}
 	.contact
 	{
 		width: 40%;
-		font-size: 19px;
-		margin-top: 5px;
+		margin-top: 10px;
+	}
+	.contact a
+	{
+		font-size: 20px;
 	}
 	.bottommenu1 h2
 	{
@@ -470,14 +483,24 @@ span:hover:after
 	{
 		font-size:50px;
 	}
+	.contacteznous
+	{
+		height: 40px;
+	}
 	.mentions
 	{
 		width: 40%;
-		font-size: 16px;	
+	}
+	.mentions a
+	{
+		font-size: 16px;
 	}
 	.contact
 	{
 		width: 40%;
+	}
+	.contact a
+	{
 		font-size: 16px;
 	}
 	.topic h2
