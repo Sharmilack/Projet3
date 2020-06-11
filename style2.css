@@ -18,16 +18,12 @@ body
 	background-color: #49a682;
 	color: #e6c11e;
 }
-.fa-pepper-hot
-{
-	color: red;
-	margin-right: 10px;
-}
 .search
 {
 	display: flex;
 	flex-direction: row;
 	height: 30px;
+	background-color: #c6c9c5;
 }
 .search input
 {
@@ -40,9 +36,21 @@ body
 {
 	padding-top: 2px;
 	width:5%;
-	background-color: yellow;
 	font-size: 23px;
 	text-align: center;
+}
+.gotomain a
+{
+	text-decoration: none;
+	font-size: 25px;
+	margin-left: 5px;
+	color: #0f0c0d;
+	background-color:#ffd752;
+}
+.gotomain a:hover
+{
+	background-color:#49a682;
+	text-decoration: underline;
 }
 ul
 {
@@ -60,20 +68,21 @@ ul
 {
 	width: 40%;
 	margin: auto;
+	margin-top: 30px;
 }
 .menu
 {
 	border: 1px solid 0;
-	width: 40%;
-	height:330px;
-	margin-top: 10px;
-	margin-left: 12px;
+	width: 47%;
+	height:400px;
+	margin-top: 14px;
+	margin-left: 14px;
 	text-align: center;
-	padding-top: 20%;
-	font-size: 18px;
+	padding-top: 27%;
+	font-size: 14px;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 3px 3px 3px 3px grey;
+	box-shadow:  0 0 7px 4px #e7e8e3;
 }
 .menu:hover
 {
@@ -144,57 +153,65 @@ ul
 .prochainement
 {
 	background-color: #49a682;
-	width:25%;
-	height: 40px;
+	width: 20%;
+	height: 45px;
 	margin:auto;
-	margin-top: 30px;
+	margin-top: 11px;
+	margin-bottom: 30px;
 	padding-top: 7px;
-	padding-left: 12px;
-	border-radius: 10px;
+	border-radius: 5px;
+	text-align:center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .prochainement a
 {
+	width:78%;
 	text-decoration: none;
 	color:#e6c11e;
-	font-size: 20px; 
+	font-size: 21px;
 	display: flex;
 	flex-direction: row;
 }
+.dots-cont
+{
+	width: 21%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 .dot 
 {
-  width: 12px;
-  height: 12px;
-  margin-left: 2px;
+  width: 7px;
+  height: 7px;
+  margin-left: 1px;
+  margin-top: 16px;
   background:#e6c11e;
-  display: inline-block;
   border-radius: 50%;
-  right: 0px;
-  bottom: 0px;
   position: relative;
-  animation: jump 1s infinite;
 }
 .dots-cont .dot-1
 {
-  -webkit-animation-delay: 100ms;
-  animation-delay: 100ms;
+  animation: wave 2000ms ease-in-out infinite;
 }
 
 .dots-cont .dot-2
 {
-  -webkit-animation-delay: 200ms;
-  animation-delay: 200ms;
-}
-
+  animation: wave 2000ms 400ms ease-in-out infinite;
+ }
 .dots-cont .dot-3
 {
-  -webkit-animation-delay: 300ms;
-  animation-delay: 300ms;
+   animation: wave 2000ms 800ms ease-in-out infinite;
 }
-@keyframes jump 
-{
-0%   {bottom: 0px;}
-20%  {bottom: 5px;}
-40%  {bottom: 0px;}
+@keyframes wave {
+	0%, 60%, 100% {
+		transform: initial;
+	}
+
+	30% {
+		transform: translateY(-10px);
+	}
 }
 footer
 {
@@ -202,7 +219,6 @@ footer
   	position: -webkit-sticky;
   	position: sticky;
  	bottom:0.1px;
- 	margin-top: 10px;
 }
 .contacteznous
 {
@@ -221,40 +237,38 @@ footer
 {
 	width: 25%;
 	margin: auto;
+	margin-top: 10px;
 }
 .mentions a
 {
 	text-decoration: none;
 	color:#e6c11e;
 }
-.mentions:hover
+.mentions h4:hover
 {
-	text-decoration: underline;
-	opacity: 0.8;
-	-webkit-animation: wiggle 0.5s;
-	animation-iteration-count: 5;
+	animation: wiggle 75ms infinite;
+ 	animation-timing-function: linear;
 }
 @keyframes wiggle {
-    0% {transform:rotate(2deg);}
-    50% {transform:rotate(-2deg);}
-    100% {transform:rotate(2deg);}
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
 }
 .contact
 {
 	width: 25%; 
 	margin: auto;
+	margin-top: 10px;
 }
 .contact a
 {
 	text-decoration: none;
 	color:#e6c11e;
 }
-.contact:hover
+.contact h4:hover
 {
-	text-decoration: underline;
-	opacity: 0.8;
-	-webkit-animation: wiggle 0.5s;
-	animation-iteration-count: 5;
+	animation: wiggle 75ms infinite;
+ 	animation-timing-function: linear;
 }
 .text
 {
@@ -267,6 +281,17 @@ footer
 .text p
 {
 	margin-top: 20px;
+}
+@media screen and (max-width: 1024px)
+{
+	body
+	{
+		width: 100%;
+	}
+	.prochainement
+	{
+		width: 25%;
+	}
 }
 @media screen and (max-width: 900px)
 {
@@ -286,6 +311,7 @@ footer
 	{
 		width: 90%;
 		height: 400px;
+		font-size: 11px;
 		margin: auto;
 		margin-top: 30px;
 		padding-top: 40%;
@@ -294,16 +320,19 @@ footer
 	{
 		width: 28%;
 		margin: auto;
-		margin-top: 20px;
+		margin-top: 18px;
+		margin-bottom: 30px;
 	}
 	.prochainement a
 	{
 		font-size: 16px;
+		padding-top: 6px;
 	}
 	.dot 
 	{
-  		width: 10px;
-  		height: 10px;
+  		width: 7px;
+  		height: 7px;
+  		margin-top: 10px;
   	}
 	footer
 	{
@@ -337,12 +366,13 @@ footer
 	}
 	.mainmenu
 	{
-		width: 70%;
+		width: 80%;
 	}
 	.menu
 	{
-		width:90%;
+		width:80%;
 		margin: auto;
+		font-size: 9px;
 		margin-top: 30px;
 		padding-top: 40%;
 		height: 350px;
@@ -353,11 +383,16 @@ footer
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
+	.prochainement a
+	{
+		font-size: 16px;
+		padding-top: 5px;
+	}
 	.dot
 	{
 		margin-left:2px;
-		width: 8px;
-		height: 8px;
+		width: 6px;
+		height: 6px;
 	}
 	.mentions
 	{
@@ -382,11 +417,12 @@ footer
 {
 	.mainmenu
 	{
-		width: 70%;
+		width: 90%;
 	}
 	.menu
 	{
-		width: 90%;
+		width: 80%;
+		font-size: 8px;
 		height: 350px;
 		padding-top: 50%;
 	}
@@ -396,12 +432,12 @@ footer
 	}
 	.prochainement
 	{
-		width: 57%;
+		width: 59%;
 	}
 	.dot
 	{
-		margin-top: 6px;
-		margin-left: 1px;
+		margin-top: 10px;
+		margin-left: 2px;
 	}
 	.contacteznous
 	{
