@@ -228,8 +228,8 @@ footer
 {
 	position: relative;
   	position: -webkit-sticky;
-  	position: sticky;
- 	bottom:0.1px;
+  	position: fixed;
+ 	bottom:0px;
 	width: 100%;
 	height: 50px;
 	background-color: #49a682;
@@ -399,9 +399,13 @@ footer div:hover
 	.menu
 	{
 		width: 80%;
-		font-size: 8px;
-		height: 350px;
+		height: 400px;
+		font-size: 9px;
 		padding-top: 50%;
+	}
+	.fa-music
+	{
+		font-size: 25px;
 	}
 	header h1
 	{

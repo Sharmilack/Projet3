@@ -30,8 +30,8 @@ footer
 {
 	position: relative;
   	position: -webkit-sticky;
-  	position: sticky;
- 	bottom:0.1px;
+  	position: fixed;
+ 	bottom:0px;
  	margin-top: 10px;
 	width: 100%;
 	height: 50px;
@@ -378,7 +378,7 @@ span:hover:after
 	}
 	#container2 h3:before, #container2 h3:after
 	{
-		width: 40%;
+		width: 34%;
 	}
 	#container3 h3
 	{
@@ -386,7 +386,7 @@ span:hover:after
 	}
 	#container3 h3:before, #container3 h3:after
 	{
-		width: 50%;
+		width: 40%;
 	}
 	.item ul
 	{
@@ -421,6 +421,10 @@ span:hover:after
 }
 @media screen and (max-width: 600px)
 {
+	body
+	{
+		width: 100%;
+	}
 	.container
 	{
 		width: 100%;
@@ -455,16 +459,17 @@ span:hover:after
 	}
 	#container1 h3:before, #container1 h3:after
 	{
-		width: 40%;
+		width: 35%;
 	}
 	#container2 h3
 	{
-		width: 77%;
+		width: 75%;
 		font-size: 18px;
 	}
 	#container2 h3:before, #container2 h3:after
 	{
-		width: 28%;
+		width: 24%;
+		top:12px;
 	}
 	#container3 h3
 	{
@@ -480,11 +485,15 @@ span:hover:after
 	}
 	#container4 h3:before, #container4 h3:after
 	{
-		width: 35%;
+		width: 29%;
 	}
 }
 @media screen and (max-width: 320px)
 {
+	body
+	{
+		width: 100%;
+	}
 	.name h1
 	{
 		font-size:50px;
@@ -513,7 +522,7 @@ span:hover:after
 	}
 	.container
 	{
-		width: 95%;
+		width: 100%;
 	}
 	.food h3
 	{
@@ -534,15 +543,16 @@ span:hover:after
 	}
 	#container1 h3:before, #container1 h3:after
 	{
-		width: 37%;
+		width: 30%;
 	}
 	#container2 h3
 	{
-		width: 90%;
+		width: 80%;
 	}
 	#container2 h3:before, #container2 h3:after
 	{
 		width: 20%;
+		top:10px;
 	}
 	#container4 h3
 	{
@@ -550,6 +560,6 @@ span:hover:after
 	}
 	#container4 h3:before, #container4 h3:after
 	{
-		width: 30%;
+		width: 25%;
 	}
 }
