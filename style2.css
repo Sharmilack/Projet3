@@ -10,13 +10,17 @@ body
 }
 .name h1
 {
-	padding-top: 10px;
+	padding-top: 12px;
 	text-align: center;
 	font-size:60px;
 	width: 100%;
-	height: 100px;
+	height: 110px;
 	background-color: #49a682;
 	color: #e6c11e;
+}
+.name a
+{
+	text-decoration: none;
 }
 .search
 {
@@ -39,30 +43,9 @@ body
 	font-size: 23px;
 	text-align: center;
 }
-.gotomain a
-{
-	text-decoration: none;
-	font-size: 25px;
-	margin-left: 5px;
-	color: #0f0c0d;
-	background-color:#ffd752;
-}
-.gotomain a:hover
-{
-	background-color:#49a682;
-	text-decoration: underline;
-}
 ul
 {
 	list-style: none;
-}
-.menu a
-{
-	transition: transform .5s;
-}
-.menu a:hover
-{
-	transform: scale(1.3);
 }
 .mainmenu
 {
@@ -73,20 +56,31 @@ ul
 .menu
 {
 	border: 1px solid 0;
-	width: 47%;
-	height:400px;
+	width: 48%;
+	height:470px;
 	margin-top: 14px;
 	margin-left: 14px;
 	text-align: center;
-	padding-top: 27%;
+	padding-top: 40%;
 	font-size: 14px;
 	display: flex;
 	flex-direction: column;
 	box-shadow:  0 0 7px 4px #e7e8e3;
+	transition: background 0.9s ease-in-out;
+   -moz-transition: background 0.9s ease-in-out;
+   -webkit-transition: background 0.9s ease-in-out;
 }
-.menu:hover
+.menu a
 {
-	opacity: 0.8;
+	transition: transform 0.9s;
+}
+.menu:hover a
+{
+	transform: scale(1.3);
+}
+.menu h4
+{
+	margin-top: 12px;
 }
 .fa-music
 {
@@ -110,6 +104,10 @@ ul
 	font-family: 'Felipa';
 	background-color: #ffcdbd;
 }
+#first:hover
+{
+	background-color: #fadfd7;
+}
 #first a
 {
 	text-decoration: none;
@@ -119,6 +117,10 @@ ul
 {
 	 font-family: 'Fresca';
 	 background-color: #f4e6f7;
+}
+#second:hover
+{
+	 background-color:#faf0fc;
 }
 #second a
 {
@@ -132,6 +134,10 @@ ul
 	font-size: 22px;
 	background-color: #f0f0eb;
 }
+#third:hover
+{
+	background-color: #f5f5f5;
+}
 #third a
 {
 	background: linear-gradient(to right,#293d94 0%,#8dc1f2 100%);
@@ -143,6 +149,10 @@ ul
 	font-family: 'Kaushan Script';
 	font-size: 22px;
 	background-color: #fffffc;
+}
+#fourth:hover
+{
+	background-color: #ffffff;
 }
 #fourth a
 {
@@ -167,8 +177,7 @@ ul
 }
 .prochainement a
 {
-	width:80%;
-	margin: auto;
+	width:78%;
 	margin-bottom: 10px;
 	text-decoration: none;
 	color:#e6c11e;
@@ -179,6 +188,7 @@ ul
 .dots-cont
 {
 	width: 21%;
+	margin-left: 1px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -187,7 +197,6 @@ ul
 {
   width: 7px;
   height: 7px;
-  margin-left: 1px;
   margin-top: 16px;
   background:#e6c11e;
   border-radius: 50%;
@@ -221,32 +230,23 @@ footer
   	position: -webkit-sticky;
   	position: sticky;
  	bottom:0.1px;
-}
-.contacteznous
-{
 	width: 100%;
 	height: 50px;
 	background-color: #49a682;
-}
-.contacteznous ul
-{	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 30px;
+	padding-top: 10px;
+	text-align: center;
 }
-.mentions
-{
-	width: 25%;
-	margin: auto;
-	margin-top: 10px;
-}
-.mentions a
+footer a
 {
 	text-decoration: none;
 	color:#e6c11e;
+
 }
-.mentions h4:hover
+footer div:hover
 {
 	animation: wiggle 75ms infinite;
  	animation-timing-function: linear;
@@ -255,22 +255,6 @@ footer
   0% { transform: translate(2px, 0); }
   50% { transform: translate(-2px, 0); }
   100% { transform: translate(2px, 0); }
-}
-.contact
-{
-	width: 25%; 
-	margin: auto;
-	margin-top: 10px;
-}
-.contact a
-{
-	text-decoration: none;
-	color:#e6c11e;
-}
-.contact h4:hover
-{
-	animation: wiggle 75ms infinite;
- 	animation-timing-function: linear;
 }
 .text
 {
@@ -283,6 +267,31 @@ footer
 .text p
 {
 	margin-top: 20px;
+}
+@media screen and (max-width: 1024px)
+{
+	body
+	{
+		width: 100%;
+	}
+	.mainmenu
+	{
+		width: 50%;
+	}
+	.menu
+	{
+		width: 50%;
+		font-size: 13px;
+	}
+	.menu #third
+	{
+		font-size: 8px;
+	}
+	 .menu #fourth
+	{
+		font-size: 8px;
+	}
+
 }
 @media screen and (max-width: 900px)
 {
@@ -298,10 +307,13 @@ footer
 	{
 		flex-direction: column;
 	}
+	.mainmenu
+	{
+		width: 60%;
+	}
 	.menu
 	{
-		width: 90%;
-		height: 400px;
+		width: 60%;
 		font-size: 11px;
 		margin: auto;
 		margin-top: 30px;
@@ -321,29 +333,15 @@ footer
 	}
 	.dot 
 	{
-  		width: 7px;
-  		height: 7px;
-  		margin-top: 13px;
+  		width: 6px;
+  		height: 6px;
+  		margin-top: 14px;
   	}
 	footer
 	{
 		width: 100%;
 	}
-	.mentions
-	{
-		width: 30%;
-		margin-top: 10px;
-	}
-	.mentions a
-	{
-		font-size: 25px;
-	}
-	.contact
-	{
-		width: 30%;
-		margin-top: 10px;
-	}
-	.contact a
+	footer a
 	{
 		font-size: 25px;
 	}
@@ -363,14 +361,14 @@ footer
 	{
 		width:80%;
 		margin: auto;
-		font-size: 9px;
+		font-size: 13px;
 		margin-top: 30px;
-		padding-top: 40%;
-		height: 350px;
+		padding-top: 50%;
 	}
 	.prochainement
 	{
 		width: 200px;
+		height: 38px;
 	}
 	.prochainement a
 	{
@@ -379,27 +377,17 @@ footer
 	}
 	.dot
 	{
-		margin-left:2px;
-		width: 6px;
-		height: 6px;
+		width: 5px;
+		height: 5px;
 	}
-	.mentions
+	footer div
 	{
 		width: 40%;
-		margin-top: 10px;
+		margin-top: 6px;
 	}
-	.mentions a
+	footer a
 	{
-		font-size: 20px;
-	}
-	.contact
-	{
-		width: 40%;
-		margin-top: 10px;
-	}
-	.contact a
-	{
-		font-size: 20px;
+		font-size: 17px;
 	}
 }
 @media screen and (max-width: 320px)
@@ -415,7 +403,7 @@ footer
 		height: 350px;
 		padding-top: 50%;
 	}
-	.name h1
+	header h1
 	{
 		font-size:50px;
 	}
@@ -428,23 +416,11 @@ footer
 		margin-top: 10px;
 		margin-left: 3px;
 	}
-	.contacteznous
+	footer
 	{
 		height: 40px;
 	}
-	.mentions
-	{
-		width: 40%;
-	}
-	.mentions a
-	{
-		font-size: 16px;
-	}
-	.contact
-	{
-		width: 40%;
-	}
-	.contact a
+	footer a
 	{
 		font-size: 16px;
 	}
