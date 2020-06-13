@@ -166,8 +166,8 @@ ul
 	width: 250px;
 	height: 45px;
 	margin:auto;
-	margin-top: 11px;
-	margin-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 80px;
 	padding-top: 7px;
 	border-radius: 5px;
 	text-align:center;
@@ -226,8 +226,6 @@ ul
 }
 footer
 {
-	position: relative;
-  	position: -webkit-sticky;
   	position: fixed;
  	bottom:0px;
 	width: 100%;
@@ -237,14 +235,12 @@ footer
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 30px;
-	padding-top: 10px;
-	text-align: center;
+	padding-top: 9px;
 }
 footer a
 {
 	text-decoration: none;
 	color:#e6c11e;
-
 }
 footer div:hover
 {
@@ -324,7 +320,7 @@ footer div:hover
 		width: 220px;
 		margin: auto;
 		margin-top: 18px;
-		margin-bottom: 30px;
+		margin-bottom: 70px;
 	}
 	.prochainement a
 	{
@@ -373,7 +369,6 @@ footer div:hover
 	.prochainement a
 	{
 		font-size: 17px;
-		margin-bottom: 12px;
 	}
 	.dot
 	{
