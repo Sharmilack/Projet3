@@ -302,6 +302,10 @@ footer div:hover
 	{
 		flex-direction: column;
 	}
+	.fa-music
+	{
+		font-size: 30px;
+	}
 	.mainmenu
 	{
 		width: 60%;
@@ -312,7 +316,6 @@ footer div:hover
 		font-size: 11px;
 		margin: auto;
 		margin-top: 30px;
-		padding-top: 40%;
 	}
 	.prochainement
 	{
@@ -358,7 +361,10 @@ footer div:hover
 		margin: auto;
 		font-size: 13px;
 		margin-top: 30px;
-		padding-top: 50%;
+	}
+	.fa-music
+	{
+		font-size: 27px;
 	}
 	.prochainement
 	{
@@ -394,7 +400,6 @@ footer div:hover
 		width: 80%;
 		height: 400px;
 		font-size: 9px;
-		padding-top: 50%;
 	}
 	.fa-music
 	{
