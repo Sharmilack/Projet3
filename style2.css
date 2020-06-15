@@ -55,13 +55,10 @@ ul
 }
 .menu
 {
-	border: 1px solid 0;
 	width: 48%;
 	height:470px;
-	margin-top: 14px;
-	margin-left: 14px;
+	margin-top: 15px;
 	text-align: center;
-	padding-top: 40%;
 	font-size: 14px;
 	display: flex;
 	flex-direction: column;
@@ -72,6 +69,7 @@ ul
 }
 .menu a
 {
+	margin:auto;
 	transition: transform 0.9s;
 }
 .menu:hover a
@@ -93,11 +91,13 @@ ul
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .lower
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 #first
 { 
