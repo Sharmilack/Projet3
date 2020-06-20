@@ -118,7 +118,7 @@ footer div:hover
 	width: 60%;
 	margin: auto;
 	margin-top: 35px;
-	margin-bottom: 20px;
+	margin-bottom: 70px;
 }
 .topic
 {
@@ -138,7 +138,6 @@ footer div:hover
 }
 .food h3
 {
-	width:50%;
 	margin: auto;
 	text-align: center;
 	font-size: 30px;
@@ -169,16 +168,6 @@ footer div:hover
 {
 	width: 10%;
 }
-#container1 h3:before, #container1 h3:after
-{
- 	content: "";
-	position: absolute;
-	height: 4px;
-	border-bottom: 1px solid #5c0606;
-	border-top: 1px solid #5c0606;
-	top: 12px;
-	width: 65%;
-}
 .food h3:before 
 {
 	right: 90%;
@@ -205,9 +194,23 @@ footer div:hover
 	margin-right: 13px;
 	margin-top: 7px;
 }
+#container1 h3
+{
+	width: 60%;
+}
+#container1 h3:before, #container1 h3:after
+{
+ 	content: "";
+	position: absolute;
+	height: 4px;
+	border-bottom: 1px solid #5c0606;
+	border-top: 1px solid #5c0606;
+	top: 12px;
+	width: 50%;
+}
 #container2 h3
 {
-	width: 73%;
+	width: 77%;
 }
 #container2 h3:before, #container2 h3:after
 {
@@ -215,7 +218,7 @@ footer div:hover
 	position: absolute;
 	border-top: 2px solid;
 	top: 15px;
-	width: 30%;
+	width: 25%;
 }
 #container3 h3
 {
@@ -232,7 +235,7 @@ footer div:hover
 }
 #container4 h3
 {
-	width: 55%;
+	width: 62%;
 }
 #container4 h3:before
 {
@@ -242,7 +245,7 @@ footer div:hover
 	background: linear-gradient(to right,#048f17 0%,#abffa8 100%);
 	border-radius: 4px;
 	top: 17px;
-	width: 50%;
+	width: 43%;
 }
 #container4 h3:after
 {
@@ -252,7 +255,7 @@ footer div:hover
 	background: linear-gradient(to left,#048f17 0%,#abffa8 100%);
 	border-radius: 4px;
 	top: 17px;
-	width: 50%;
+	width: 43%;
 }
 span
 {
@@ -384,6 +387,14 @@ span:hover:after
 	{
 		width: 40%;
 	}
+	#container4 h3
+	{
+		width: 60%;
+	}
+	#container4 h3:before,#container4 h3:after
+	{
+		width: 37%;
+	}
 	.item ul
 	{
 		width: 90%;
@@ -420,6 +431,10 @@ span:hover:after
 	body
 	{
 		width: 100%;
+	}
+	.heading h2
+	{
+		font-size: 29px;
 	}
 	.container
 	{
@@ -469,11 +484,12 @@ span:hover:after
 	}
 	#container3 h3
 	{
-		width: 78%;
+		width: 65%;
 	}
 	#container3 h3:before, #container3 h3:after
 	{
-		width: 28%;
+		top: 10px;
+		width: 32%;
 	}
 	#container4 h3
 	{
@@ -481,6 +497,7 @@ span:hover:after
 	}
 	#container4 h3:before, #container4 h3:after
 	{
+		top:9px;
 		width: 29%;
 	}
 }
@@ -533,6 +550,10 @@ span:hover:after
 	{
 		font-size: 30px;
 	}
+	.heading h2
+	{
+		font-size: 24px;
+	}
 	#container1 h3
 	{
 		width: 67%;
@@ -540,6 +561,7 @@ span:hover:after
 	#container1 h3:before, #container1 h3:after
 	{
 		width: 30%;
+		top: 7px;
 	}
 	#container2 h3
 	{
@@ -550,12 +572,16 @@ span:hover:after
 		width: 20%;
 		top:10px;
 	}
+	#container3 h3:before, #container3 h3:after
+	{
+		top:8px;
+	}
 	#container4 h3
 	{
-		width: 75%;
+		width: 50%;
 	}
 	#container4 h3:before, #container4 h3:after
 	{
-		width: 25%;
+		width: 50%;
 	}
 }

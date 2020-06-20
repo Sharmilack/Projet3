@@ -49,7 +49,7 @@ ul
 }
 .mainmenu
 {
-	width: 40%;
+	width: 42%;
 	margin: auto;
 	margin-top: 30px;
 }
@@ -59,25 +59,32 @@ ul
 	height:470px;
 	margin-top: 15px;
 	text-align: center;
-	font-size: 14px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	box-shadow:  0 0 7px 4px #e7e8e3;
 	transition: background 0.9s ease-in-out;
 }
 .menu a
 {
+	font-size: 17px;
+	width: 100%;
 	margin:auto;
-	transition: transform 0.9s;
+	transition: transform 900ms;
 }
 .menu:hover a
 {
-	transform: scale(1.3);
+	transform: scale(1.4);
 	opacity: 0.6;
+}
+.menu h3
+{
+	margin-top: 15px;
 }
 .menu h4
 {
 	margin-top: 12px;
+	margin-bottom: 19px;
 }
 .fa-music
 {
@@ -85,6 +92,7 @@ ul
 	background: linear-gradient(to right, #ab0000 0%,#f79494 100%);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+  	text-decoration: none;
 }
 .upper
 {
@@ -126,11 +134,11 @@ ul
 	background: linear-gradient(to right, #c97e14 0%,#b977f2 100%);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+  	text-decoration: none;
 }
 #third
 {
 	font-family: 'Alex Brush';
-	font-size: 22px;
 	background-color: #f0f0eb;
 }
 #third:hover
@@ -142,11 +150,11 @@ ul
 	background: linear-gradient(to right,#293d94 0%,#8dc1f2 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-decoration: none;
 }
 #fourth
 {
 	font-family: 'Kaushan Script';
-	font-size: 22px;
 	background-color: #fffffc;
 }
 #fourth:hover
@@ -155,29 +163,25 @@ ul
 }
 #fourth a
 {
-	background: linear-gradient(to right,#048f17 0%,#abffa8 100%);
+	background-image: linear-gradient(to right,#048f17 0%,#abffa8 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-decoration: none;
 }
 .prochainement
 {
 	background-color: #49a682;
-	width: 250px;
-	height: 45px;
+	width: 225px;
 	margin:auto;
 	margin-top: 15px;
 	margin-bottom: 80px;
-	padding-top: 7px;
 	border-radius: 5px;
-	text-align:center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 }
 .prochainement a
 {
-	width:78%;
-	margin-bottom: 10px;
+	width:95%;
+	margin: auto;
+	padding:7px 5px 7px 7px;
 	text-decoration: none;
 	color:#e6c11e;
 	font-size: 21px;
@@ -186,20 +190,20 @@ ul
 }
 .dots-cont
 {
-	width: 21%;
 	margin-left: 1px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .dot 
 {
-  width: 7px;
-  height: 7px;
-  margin-top: 16px;
-  background:#e6c11e;
-  border-radius: 50%;
-  position: relative;
+	margin-left: 3px;
+  	width: 7px;
+  	height: 7px;
+  	margin-top: 16px;
+  	background:#e6c11e;
+  	border-radius: 50%;
+ 	position: relative;
 }
 .dots-cont .dot-1
 {
@@ -253,7 +257,7 @@ footer div:hover
 }
 .text
 {
-	min-height: 100%;
+	margin-left: 8px;
 }
 .text h3
 {
@@ -271,12 +275,11 @@ footer div:hover
 	}
 	.mainmenu
 	{
-		width: 50%;
+		width: 53%;
 	}
 	.menu
 	{
-		width: 50%;
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.menu #third
 	{
@@ -285,6 +288,10 @@ footer div:hover
 	 .menu #fourth
 	{
 		font-size: 8px;
+	}
+	.prochainement
+	{
+		width: 220px;
 	}
 
 }
@@ -313,13 +320,13 @@ footer div:hover
 	.menu
 	{
 		width: 60%;
-		font-size: 11px;
+		font-size: 18px;
 		margin: auto;
 		margin-top: 30px;
 	}
 	.prochainement
 	{
-		width: 220px;
+		width: 205px;
 		margin: auto;
 		margin-top: 18px;
 		margin-bottom: 70px;
@@ -357,9 +364,8 @@ footer div:hover
 	}
 	.menu
 	{
-		width:80%;
+		width:85%;
 		margin: auto;
-		font-size: 13px;
 		margin-top: 30px;
 	}
 	.fa-music
@@ -368,12 +374,16 @@ footer div:hover
 	}
 	.prochainement
 	{
-		width: 200px;
+		width: 190px;
 		height: 38px;
 	}
 	.prochainement a
 	{
 		font-size: 17px;
+	}
+	.dots-cont
+	{
+		margin-left: 1px;
 	}
 	.dot
 	{
@@ -399,7 +409,7 @@ footer div:hover
 	{
 		width: 80%;
 		height: 400px;
-		font-size: 9px;
+		font-size:15px;
 	}
 	.fa-music
 	{
@@ -411,16 +421,17 @@ footer div:hover
 	}
 	.prochainement
 	{
-		width: 190px;
+		width: 185px;
 	}
 	.dot
 	{
-		margin-top: 10px;
+		height: 4.5px;
+		margin-top: 13px;
 		margin-left: 3px;
 	}
 	footer
 	{
-		height: 40px;
+		height: 45px;
 	}
 	footer a
 	{
