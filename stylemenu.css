@@ -272,7 +272,7 @@ span:after
   bottom: -2px;
   height: 4px;
   transition-property: width;
-  transition-duration: 0.5s;
+  transition-duration: 0.8s;
   transition-timing-function: ease-out;
 }
 .one:after
